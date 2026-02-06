@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Construcciones Invisibles - Prototipo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <div class="container-fluid min-vh-100 bg-light">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-primary sidebar text-white py-4">
+        <div class="sidebar-sticky">
+          <h2 class="mb-4"><i class="fa-solid fa-building"></i> CI</h2>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a class="nav-link text-white" href="#" onclick="showView('dashboard')"><i class="fa-solid fa-chart-line me-2"></i>Dashboard</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link text-white" href="#" onclick="showView('alertas')"><i class="fa-solid fa-bell me-2"></i>Alertas</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link text-white" href="#" onclick="showView('calendario')"><i class="fa-solid fa-calendar-days me-2"></i>Calendario</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link text-white" href="#" onclick="showView('config')"><i class="fa-solid fa-gear me-2"></i>Configuración</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main class="col-md-10 ms-sm-auto px-4 py-4 position-relative" id="main-content">
+        <div style="position:absolute;top:24px;right:32px;z-index:10;">
+          <img src="https://i.imgur.com/2Q2Q2Q2.png" alt="Logo J&E" style="height:48px;width:auto;object-fit:contain;" title="J&E" />
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+  <script src="constructoras-info.js"></script>
+  <script src="obras-csv.js"></script>
+  <script src="data.js"></script>
+  <script src="map.js"></script>
+  <script src="visitas.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

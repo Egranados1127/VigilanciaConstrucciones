@@ -1,0 +1,48 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6fa;
+  color: #222;
+}
+.sidebar {
+  min-height: 100vh;
+  background: #1a365d !important;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.07);
+}
+.sidebar h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.sidebar .nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.sidebar .nav-link.active, .sidebar .nav-link:hover {
+  background: #2563eb;
+  color: #fff;
+}
+.card {
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+  margin-bottom: 2rem;
+}
+.btn-primary {
+  background: #2563eb;
+  border: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.btn-primary:hover {
+  background: #1e40af;
+}
+.fa-building {
+  color: #fbbf24;
+}
+.fa-chart-line, .fa-bell, .fa-file-lines, .fa-gear {
+  color: #fbbf24;
+}

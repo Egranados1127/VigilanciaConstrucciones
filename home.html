@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Construcciones Invisibles - Estrategia y Tecnología</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <style>
+    .hero {
+      background: linear-gradient(90deg, #1a365d 60%, #2563eb 100%);
+      color: #fff;
+      padding: 4rem 2rem 2rem 2rem;
+      border-radius: 0 0 2rem 2rem;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: #1a365d;
+    }
+    .icon-circle {
+      background: #2563eb;
+      color: #fff;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero text-center mb-5">
+    <h1 class="display-4 fw-bold">Construcciones Invisibles</h1>
+    <p class="lead">La plataforma inteligente para detectar, monitorear y priorizar oportunidades de obra en Colombia antes que la competencia.</p>
+    <a href="index.html" class="btn btn-warning btn-lg mt-3">Ir al Dashboard</a>
+  </div>
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <div class="section-title">Estrategia de la herramienta</div>
+        <p>Construcciones Invisibles integra fuentes públicas, portales inmobiliarios, redes sociales y análisis de imágenes satelitales para identificar obras nuevas y en ejecución. El sistema prioriza oportunidades comerciales mediante geolocalización, procesamiento visual y reglas de scoring, notificando a los equipos de ventas en tiempo real.</p>
+        <ul>
+          <li>Detección temprana de obras por permisos, publicaciones y señales visuales.</li>
+          <li>Clasificación y geolocalización por tipo, tamaño, etapa y probabilidad de compra.</li>
+          <li>Alertas personalizadas y priorización de leads.</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <div class="section-title">Tecnología utilizada</div>
+        <div class="d-flex flex-wrap gap-4">
+          <div>
+            <div class="icon-circle"><i class="fa-brands fa-python"></i></div>
+            <div>Python (Scrapy, Airflow, FastAPI)</div>
+          </div>
+          <div>
+            <div class="icon-circle"><i class="fa-brands fa-react"></i></div>
+            <div>React + Bootstrap</div>
+          </div>
+          <div>
+            <div class="icon-circle"><i class="fa-solid fa-database"></i></div>
+            <div>Postgres + PostGIS</div>
+          </div>
+          <div>
+            <div class="icon-circle"><i class="fa-solid fa-cloud"></i></div>
+            <div>S3, BigQuery, Kubernetes</div>
+          </div>
+          <div>
+            <div class="icon-circle"><i class="fa-solid fa-bell"></i></div>
+            <div>Firebase, Twilio, SendGrid</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <div class="section-title">Estados y etapas de las obras encontradas</div>
+        <ul class="list-group mb-3">
+          <li class="list-group-item"><b>Licitación:</b> Proyectos en proceso de adjudicación y contratación.</li>
+          <li class="list-group-item"><b>Ejecución:</b> Obras con permisos y contratos activos, inicio de actividades.</li>
+          <li class="list-group-item"><b>Construcción:</b> Avance físico, movimiento de tierra, estructura y acabados.</li>
+          <li class="list-group-item"><b>Reconstrucción:</b> Mejoras, ampliaciones o rehabilitación de infraestructura existente.</li>
+          <li class="list-group-item"><b>Finalización:</b> Obras próximas a entrega y cierre de contratos.</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <div class="section-title">¿Cómo se identifican las obras?</div>
+        <ul>
+          <li>Scraping y ETL de fuentes públicas y privadas.</li>
+          <li>Procesamiento de imágenes satelitales y Street View (detección visual).</li>
+          <li>Extracción de datos de portales inmobiliarios y redes sociales.</li>
+          <li>Geocodificación y validación de direcciones.</li>
+          <li>Fusión de señales y scoring por ML.</li>
+        </ul>
+        <p>La plataforma aprende y mejora continuamente gracias al feedback de los equipos comerciales y la integración con CRM.</p>
+      </div>
+    </div>
+    <footer class="text-center py-4">
+      <small>Construcciones Invisibles &copy; 2026 | Prototipo profesional para vigilancia tecnológica</small>
+    </footer>
+  </div>
+</body>
+</html>
